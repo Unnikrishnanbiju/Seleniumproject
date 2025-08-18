@@ -11,6 +11,8 @@ public class chrometest {
         driver.get("https://www.sdetclub.com/feed");
         driver.manage().window().maximize();
 
+        driver.quit();
+
         // Optional: add driver.quit() to close the browser at the end
         // driver.quit();
     }
