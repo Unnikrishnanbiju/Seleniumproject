@@ -9,7 +9,7 @@ public class Palindrome {
              System.out.println("Palindrome");
          }
          else {
-             System.out.println("Not palindrome");
+             System.out.println("Not Palindrome");
          }
     }
 }
