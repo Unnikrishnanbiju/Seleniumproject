@@ -8,6 +8,7 @@ public class PrimeOrNot {
             if (num % i == 0){
                 isPrime = false;
                 break;
+
             }
             System.out.println(isPrime ? "prime":"Not Prime");
         }
