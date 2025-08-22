@@ -7,7 +7,7 @@ public class LastNonRepeated {
             char ch = str.charAt(i);
 
             if (str.indexOf(ch) == str.lastIndexOf(ch)) {
-                System.out.println("last non - repeating ch " + ch);
+                System.out.println("last non -   repeating ch " + ch);
                 break;
             }
 
