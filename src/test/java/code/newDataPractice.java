@@ -17,7 +17,9 @@ public class newDataPractice {
 
         System.out.println(map);
 
-
+        System.out.println("********************************************");
+        System.out.println("----------------");
+        System.out.println("********************************************");
 
     }
 }
