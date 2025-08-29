@@ -1,5 +1,6 @@
 package code;
 
+import java.lang.reflect.Array;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -20,5 +21,6 @@ public class AddandRemoveDuplicate {
 
         }
         Integer[] mergedArray = resultSet.toArray(new Integer[0]);
+        System.out.println(Array.toString(mergedArray));
     }
 }
