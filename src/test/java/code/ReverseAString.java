@@ -32,6 +32,8 @@ public class ReverseAString {
         }
         System.out.println(count);
         System.out.println("*********************************************************************");
+        System.out.println("reverse each word ");
+        System.out.println("*********************************************************************");
 
 
     }
