@@ -1,5 +1,7 @@
 package Array;
 
+import java.util.Arrays;
+
 public class LargestArray {
     public static void main(String[] args) {
         int[] arr = {2,3,4,5,6,7,2,9,};
@@ -11,5 +13,7 @@ public class LargestArray {
 
         }
         System.out.println(max);
+        Arrays.sort(arr);
+        System.out.println("Second Largets  "+arr[arr.length-2]);
     }
 }
