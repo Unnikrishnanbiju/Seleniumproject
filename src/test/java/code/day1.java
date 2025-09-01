@@ -6,9 +6,9 @@ public class day1 {
     public static void main(String[] args) {
         String arr = "maam";
 
-        System.out.println("*********************************************");
+        System.out.println("*******************Reverse**************************");
         System.out.println(new StringBuilder(arr).reverse().toString());
-        System.out.println("*********************************************");
+        System.out.println("********************palindrome*************************");
         String rev = new StringBuilder(arr).reverse().toString();
         if (arr.equals(rev)){
             System.out.println("Palindrome");
