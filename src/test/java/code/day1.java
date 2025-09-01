@@ -10,22 +10,51 @@ public class day1 {
         System.out.println(new StringBuilder(arr).reverse().toString());
         System.out.println("********************Palindrome*************************");
         String rev = new StringBuilder(arr).reverse().toString();
-        if (arr.equals(rev)){
+        if (arr.equals(rev)) {
             System.out.println("Palindrome");
-        }
-        else {
+        } else {
             System.out.println("Not");
         }
         System.out.println("**************✅ Find duplicate characters in a string*******************************");
         char[] chars = arr.toCharArray();
         System.out.println("Duplicate character");
         for (int i = 0; i < chars.length; i++) {
-            for (int j = i +1; j < chars.length; j++) {
+            for (int j = i + 1; j < chars.length; j++) {
                 System.out.println(chars[i]);
             }
 
         }
-        System.out.println("*********************************************");
+        System.out.println("********************✅ Count vowels, consonants, digits, and spaces*************************");
+        String str = "Hello world 123! love";
+
+        int vowels = 0, consonants = 0, digits = 0, spaces = 0;
+        str = str.toLowerCase();
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                vowels++;
+            else if (ch >= 'a' && ch <= 'z')
+                consonants++;
+
+            else if (ch >= '0' && ch <= '9')
+                digits++;
+
+            else if (ch == ' ')
+                spaces++;
+
+
+        }
+        System.out.println("Vowels"+vowels);
+        System.out.println("Consonants"+consonants);
+        System.out.println(digits);
+        System.out.println(spaces);
+
+
+
+
+
         System.out.println("*********************************************");
         System.out.println("*********************************************");
         System.out.println("*********************************************");
