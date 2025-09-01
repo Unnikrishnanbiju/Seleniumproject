@@ -1,5 +1,7 @@
 package code;
 
+import org.openqa.selenium.json.JsonOutput;
+
 import java.sql.SQLOutput;
 
 public class day1 {
@@ -46,16 +48,19 @@ public class day1 {
 
 
         }
-        System.out.println("Vowels"+vowels);
-        System.out.println("Consonants"+consonants);
-        System.out.println(digits);
-        System.out.println(spaces);
+        System.out.println("Vowels "+vowels);
+        System.out.println("Consonants " +consonants);
+        System.out.println("digits "+digits);
+        System.out.println("spaces "+spaces);
 
 
 
 
 
-        System.out.println("*********************************************");
+        System.out.println("*****************✅ Remove all whitespace from a string****************************");
+        String spac = str.replaceAll(" ","");
+        System.out.println(spac);
+
         System.out.println("*********************************************");
         System.out.println("*********************************************");
     }
