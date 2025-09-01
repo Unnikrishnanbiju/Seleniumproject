@@ -3,6 +3,8 @@ package code;
 import org.openqa.selenium.json.JsonOutput;
 
 import java.sql.SQLOutput;
+import java.util.HashMap;
+import java.util.Map;
 
 public class day1 {
     public static void main(String[] args) {
@@ -61,7 +63,51 @@ public class day1 {
         String spac = str.replaceAll(" ","");
         System.out.println(spac);
 
+        System.out.println("******************✅ Find the first non-repeated character ( asked in nagarro recently )***************************");
+        String strr = "hhelloh";
+
+        for (char h :strr.toCharArray()){
+            if (strr.indexOf(h) == str.lastIndexOf(h)){
+                System.out.println("First non repeted charater is "+h);
+                break;
+            }
+        }
+
+
+
+        System.out.println("*******************✅ Count occurrences of a character**************************");
+String strrr = "helloworld";
+int count =0;
+char ch = 'l';
+        for (int i = 0; i <strrr.length() ; i++) {
+            if (strrr.charAt(i) == ch){
+                count++;
+            }
+
+        }
+        System.out.println(count+"count of ");
+
+
+
+        System.out.println("******************COUNT Each CHArACTER***************************");
+        String Str2 = "javascript";
+
+        Map<Character, Integer> map = new HashMap<>();
+        for (char cc : Str2.toCharArray()){
+            map.put(cc,map.getOrDefault(cc,0)+1);
+        }
+        System.out.println(map);
+
         System.out.println("*********************************************");
+
         System.out.println("*********************************************");
+
+        System.out.println("*********************************************");
+
+        System.out.println("*********************************************");
+
+        System.out.println("*********************************************");
+
+
     }
 }
