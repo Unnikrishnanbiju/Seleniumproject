@@ -6,6 +6,7 @@ public class REmoveDuplicate {
         for (char c : str.toCharArray())
             if (res.indexOf(c)<0)res += c;
         System.out.println(res);
+        System.out.println("Hello");
 
     }
 }
