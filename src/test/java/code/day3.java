@@ -1,6 +1,8 @@
 package code;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class day3 {
     public static void main(String[] args) {
@@ -41,7 +43,13 @@ for (int num :arr){
         else System.out.println("NOt prime");
         System.out.println("**************************Odd and Even**********************************");
         System.out.println((num1 % 2 == 0)?"Even":"Odd");
-        System.out.println("************************************************************");
+        System.out.println("************************Character Count ************************************");
+        String data = "helloworld";
+        Map<Character, Integer> map = new HashMap<>();
+        for (char count :data.toCharArray()){
+            map.put(count,map.getOrDefault(count,0)+1);
+        }
+        System.out.println(map  );
         System.out.println("************************************************************");
     }
 }
