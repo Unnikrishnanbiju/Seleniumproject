@@ -39,7 +39,8 @@ for (int num :arr){
         if (isPrime)
             System.out.println(num1 +" Is Prime");
         else System.out.println("NOt prime");
-        System.out.println("************************************************************");
+        System.out.println("**************************Odd and Even**********************************");
+        System.out.println((num1 % 2 == 0)?"Even":"Odd");
         System.out.println("************************************************************");
         System.out.println("************************************************************");
     }
