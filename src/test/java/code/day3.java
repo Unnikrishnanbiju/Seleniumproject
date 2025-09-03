@@ -17,8 +17,28 @@ for (int num :arr){
 }
         System.out.println(min);
         System.out.println(max);
-        System.out.println("************************************************************");
-        System.out.println("************************************************************");
+        System.out.println("*************Duplicate Character***********************************************");
+        String str = "data", result = "";
+        for (char c: str.toCharArray())
+            if (result.indexOf(c)<0)
+                result += c;
+        System.out.println(result);
+
+
+
+
+
+        System.out.println("*******************PrimeNUmber*****************************************");
+        int num1 = 7;
+        boolean isPrime = true;
+
+        if (num1 <=1) isPrime = false;
+        for (int i = 2; i < num1 ; i++){
+            if (num1 % i == 0) isPrime = false;
+        }
+        if (isPrime)
+            System.out.println(num1 +" Is Prime");
+        else System.out.println("NOt prime");
         System.out.println("************************************************************");
         System.out.println("************************************************************");
         System.out.println("************************************************************");
