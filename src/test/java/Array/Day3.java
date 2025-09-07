@@ -5,7 +5,14 @@ public class Day3 {
         System.out.println("***************************Reverse a String****************************************");
         String str = "Hello";
         System.out.println(new StringBuilder(str).reverse().toString());
-        System.out.println("*******************************************************************");
+        System.out.println("***************************Plindrome****************************************");
+        String str1 = "maam";
+        String rev = new StringBuilder(str1).reverse().toString();
+        if (str1.equals(rev)){
+            System.out.println("Palindrome");
+        }else {
+            System.out.println("NOT");
+        }
         System.out.println("*******************************************************************");
         System.out.println("*******************************************************************");
         System.out.println("*******************************************************************");
