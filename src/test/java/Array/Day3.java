@@ -1,5 +1,8 @@
 package Array;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Day3 {
     public static void main(String[] args) {
         System.out.println("***************************Reverse a String****************************************");
@@ -18,11 +21,24 @@ public class Day3 {
         for(char c : str3.toCharArray()){
             if (str3.indexOf(c) == str3.lastIndexOf(c)){
                 System.out.println("First non-reapeated number is :"+c);
-                return;
+//                return;
             }
         }
         System.out.println("No non-repeated number");
-        System.out.println("*******************************************************************");
+
+        System.out.println("******************OCCURANCE OF EACH CHARACTER IN STRING*************************************************");
+
+
+        String str4 = "hello";
+        Map<Character,Integer> map = new HashMap<>();
+
+        for (char cH: str.toCharArray()){
+            map.put(cH, map.getOrDefault(cH,0)+1);
+        }
+        System.out.println(map);
+
+
+
         System.out.println("*******************************************************************");
         System.out.println("*******************************************************************");
         System.out.println("*******************************************************************");
